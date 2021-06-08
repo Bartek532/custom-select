@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Bartek532/custom-select/issues"
   },
-  "homepage": "https://bartek532.github.io/custom-select"
+  "homepage": "https://bartek532.github.io/custom-select",
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
 }

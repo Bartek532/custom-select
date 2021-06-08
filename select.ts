@@ -1,5 +1,18 @@
+type SelectFormattedOption = {
+  value: string;
+  label: string;
+  selected: boolean;
+  element: HTMLOptionElement;
+};
+
 export class Dropdown {
-  constructor(element) {
+  dropdownElement: HTMLSelectElement;
+  optionElements: SelectFormattedOption[];
+  wrapperElement: HTMLDivElement;
+  labelElement: HTMLSpanElement;
+  optionsListElement: HTMLUListElement;
+
+  constructor(element: HTMLSelectElement) {
     this.dropdownElement = element;
     this.optionElements = getFormattedOptions(
       document.querySelectorAll("option")
@@ -20,7 +33,7 @@ export class Dropdown {
     return this.optionElements.indexOf(this.selectedOption);
   }
 
-  selectValue(value) {
+  selectValue(value: string) {
     const newSelectedOption = this.optionElements.find(
       option => option.value === value
     );
@@ -50,7 +63,7 @@ export class Dropdown {
 let debounceTimeout;
 let searchTerm = "";
 
-const setupDropdownElement = select => {
+const setupDropdownElement = (select: Dropdown) => {
   select.wrapperElement.classList.add("custom-select-wrapper");
   select.wrapperElement.tabIndex = 0;
 
@@ -130,7 +143,9 @@ const setupDropdownElement = select => {
   });
 };
 
-const getFormattedOptions = options => {
+const getFormattedOptions = (
+  options: HTMLOptionElement[] | NodeListOf<HTMLOptionElement>
+) => {
   return [...options].map(option => {
     return {
       value: option.value,

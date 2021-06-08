@@ -1,7 +1,7 @@
-import { Dropdown } from "./select.js";
+import { Dropdown } from "./select";
 
 const dropdownElements = document.querySelectorAll(".dropdown");
 
 dropdownElements.forEach(dropdownElement => {
-  new Dropdown(dropdownElement);
+  new Dropdown(dropdownElement as HTMLSelectElement);
 });
