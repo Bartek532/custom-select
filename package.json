@@ -1,0 +1,22 @@
+{
+  "name": "custom-select",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "parcel watch index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bartek532/custom-select.git"
+  },
+  "keywords": [],
+  "author": "Bartosz Zagrodzki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bartek532/custom-select/issues"
+  },
+  "homepage": "https://bartek532.github.io/custom-select"
+}
