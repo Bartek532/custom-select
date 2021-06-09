@@ -2,11 +2,11 @@
   "name": "custom-select",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "dist/index.html",
   "scripts": {
     "start": "parcel index.html",
     "dev": "parcel watch index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,10 @@
   },
   "homepage": "https://bartek532.github.io/custom-select",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+    "cssnano": "^5.0.5",
+    "parcel": "^2.0.0-beta.3.1",
+    "postcss": "^8.3.0",
     "sass": "^1.34.1",
     "typescript": "^4.3.2"
   }
