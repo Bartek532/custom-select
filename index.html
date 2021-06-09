@@ -4,24 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Custom select component make with HTML, SCSS and TypeScript"
+    />
     <link rel="stylesheet" href="./styles.scss" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Custom Select Component</title>
   </head>
   <body>
-    <label for="select">Food:</label>
-    <select name="select" id="select" class="dropdown">
-      <option value="1">salat</option>
-      <option value="2">pizza</option>
-      <option value="3">spaghetti</option>
-      <option value="4">salat</option>
-      <option value="5">pizza</option>
-      <option value="6">spaghetti</option>
-      <option value="7">salat</option>
-      <option value="8">pizza</option>
-      <option value="9">spaghetti</option>
-      <option value="11">salat</option>
-      <option value="12">pizza</option>
-      <option value="14">spaghetti</option>
+    <label for="food" class="custom-select-label">Food:</label>
+    <select name="select" id="food" class="dropdown">
+      <option value="salat">&#129367; salat</option>
+      <option value="pizza">&#127829; pizza</option>
+      <option value="hamburger">&#127828; hamburger</option>
+      <option value="spaghetti">&#127836; spaghetti</option>
+      <option value="meat">&#127831; meat</option>
+      <option value="hot-dog">&#127789; hot-dog</option>
+      <option value="taco">&#127790; taco</option>
+      <option value="sushi">&#127843; sushi</option>
+      <option value="cake">&#127856; cake</option>
+      <option value="chips">&#127839; chips</option>
     </select>
 
     <script src="./script.ts"></script>
